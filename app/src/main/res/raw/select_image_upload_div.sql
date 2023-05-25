@@ -1,0 +1,3 @@
+SELECT UPLOAD_YN
+FROM rfid_asset_file
+WHERE ORIGNL_FILE_NM = ? 

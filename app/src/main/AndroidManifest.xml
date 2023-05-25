@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
@@ -28,8 +31,8 @@
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.imageupload"
-            android:exported="false"
-            android:grantUriPermissions="true">
+            android:grantUriPermissions="true"
+            android:exported="false">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
